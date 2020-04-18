@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Grocery-Store
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                    <button class="btn btn-success" type="button" onclick="window.location='{{ url("products") }}'">
+                      <i class="fa fa-plus fa-fw"></i> Продукты
+                    </button>
+                    <div class="pr-3"></div>
+                    <button class="btn btn-success" type="button" onclick="window.location='{{ url("warehouses") }}'">
+                      <i class="fa fa-plus fa-fw"></i> Продукты на складе
+                    </button>
+                    <div class="pr-3"></div>
+                     <button class="btn btn-success" type="button" onclick="window.location='{{ url("showcaseproducts") }}'">
+                      <i class="fa fa-plus fa-fw"></i> Продукты на витрине
+                    </button>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

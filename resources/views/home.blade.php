@@ -15,15 +15,6 @@
                     @endif
 
                     You are logged in!
-                    <button class="btn btn-success" type="button" onclick="window.location='{{ url("products") }}'">
-                      <i class="fa fa-plus fa-fw"></i> Продукты
-                    </button>
-                    <button class="btn btn-success" type="button" onclick="window.location='{{ url("warehouses") }}'">
-                      <i class="fa fa-plus fa-fw"></i> Продукты на складе
-                    </button>
-                     <button class="btn btn-success" type="button" onclick="window.location='{{ url("showcaseproducts") }}'">
-                      <i class="fa fa-plus fa-fw"></i> Продукты на витрине
-                    </button>
                 </div>
             </div>
         </div>
