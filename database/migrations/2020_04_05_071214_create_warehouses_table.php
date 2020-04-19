@@ -16,7 +16,7 @@ class CreateWarehousesTable extends Migration
         Schema::create('warehouses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('amount_of_product');
+            $table->decimal('amount_of_product', 5, 2);
             $table->timestamps();
 
             $table->index('product_id');

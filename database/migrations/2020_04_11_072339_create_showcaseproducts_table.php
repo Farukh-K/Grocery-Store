@@ -16,7 +16,7 @@ class CreateShowcaseproductsTable extends Migration
         Schema::create('showcaseproducts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('amount_of_product_on_showcase');
+            $table->decimal('amount_of_product_on_showcase', 5, 2);
             $table->timestamps();
         });
     }
