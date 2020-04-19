@@ -42,7 +42,7 @@ class ShowcaseProductsController extends Controller
         return redirect('/showcaseproducts');
     }
     else{
-            return redirect('/showcaseproducts');
+            return redirect()->back() ->with('alert', 'Не хватает продукта на складе для перемещения на витрину');
         }
     }
 }
