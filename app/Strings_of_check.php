@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Strings_of_check extends Model
 {
-    //
+    public function Check()
+    {
+    	return $this->belongsTo(Check::class);
+    }
 }

@@ -39,3 +39,5 @@ Route::get('/showcaseproducts/remove', 'ShowcaseproductsController@remove');
 
 Route::post('/showcaseproducts/remove', 'ShowcaseproductsController@store');
 
+
+
