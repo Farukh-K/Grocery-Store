@@ -11,6 +11,7 @@
 |
 */
 
+use App\Check;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -38,4 +39,15 @@ Route::get('/showcaseproducts', 'ShowcaseproductsController@index')->name('showc
 Route::get('/showcaseproducts/remove', 'ShowcaseproductsController@remove');
 
 Route::post('/showcaseproducts/remove', 'ShowcaseproductsController@store');
+
+Route::get('/check/add','ChecksController@createcheck');
+
+Route::post('/check/add','ChecksController@store');
+
+Route::get('/check/addproducts','ChecksController@addprod');
+
+Route::post('/check/addproducts','ChecksController@store');
+
+
+
 
