@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Выписывание чека</div>
+                <div class="card-header">Чек</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,13 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                   <form action="{{ url('showcaseproducts/remove') }}" method="POST" class="form-horizontal">
+                   <form action="{{ url('check/add') }}" method="POST" class="form-horizontal">
                       {{ csrf_field() }}
                       {{ method_field('POST') }}
                       <div class="form-group">
                         <label for="product_id" class="col-sm-3 control-label">Наименование продукта</label>
-
                         <div class="col-sm-6">
                           <select name="product_id" class="form-control">
                             @foreach ($products as $product)
@@ -27,12 +25,11 @@
                                 @endforeach
                           </select>
                         </div>
-                        <label for="amount_of_product_on_showcase" class="col-sm-3 control-label">Количество продукта</label>
-
+                        <label for="amount_of_product_in_check" class="col-sm-3 control-label">Количество продукта</label>
                         <div class="col-sm-6">
-                          <input type="text" name="amount_of_product_on_showcase" id="amount_of_product_on_showcase" class="form-control">
-                          @if ($errors->has('amount_of_product_on_showcase'))
-                          <strong>{{$errors->first('amount_of_product_on_showcase')}}</strong>>
+                          <input type="text" name="amount_of_product_in_check" id="amount_of_product_in_check" class="form-control">
+                          @if ($errors->has('amount_of_product_in_check'))
+                          <strong>{{$errors->first('amount_of_product_in_check')}}</strong>>
                           @endif
                         </div>
                       </div>
@@ -44,7 +41,6 @@
                         </div>
                       </div>
                     </form>
-                </div>
             </div>
         </div>
     </div>

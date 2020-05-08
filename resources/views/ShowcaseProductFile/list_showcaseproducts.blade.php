@@ -45,7 +45,9 @@
  <button class="btn btn-primary" type="button" onclick="window.location='{{ url("showcaseproducts/remove") }}'">
                       <i class="fa fa-plus fa-fw"></i> Переместить продукты со склада
                     </button>
-
+  <button class="btn btn-primary" type="button" onclick="window.location='{{ url("check/add") }}'">
+                      <i class="fa fa-plus fa-fw"></i> Выписывание чека
+                    </button>
                 </div>
             </div>
         </div>

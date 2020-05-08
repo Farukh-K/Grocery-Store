@@ -18,6 +18,7 @@ class CreateStringsOfChecksTable extends Migration
             $table->unsignedBigInteger('check_id');
             $table->unsignedBigInteger('product_id');
             $table->decimal('amount_of_product_in_check', 5, 2);
+            $table->decimal('price_of_product',5,2);
             $table->timestamps();
 
 
