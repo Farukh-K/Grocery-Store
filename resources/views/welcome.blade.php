@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Grocery-Store
+                    GroceryStores
                 </div>
 
                 <div class="links">
